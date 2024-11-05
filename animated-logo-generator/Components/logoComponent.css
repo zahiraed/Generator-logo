@@ -1,0 +1,119 @@
+/* Global Styles */
+* {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  color: #444;
+  background-color: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+#logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+#imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.control-group {
+  margin-bottom: 20px;
+}
+
+.styled-input,
+.styled-select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.styled-input:focus,
+.styled-select:focus {
+  border-color: #0288d1;
+  outline: none;
+}
+
+.styled-button {
+  background-color: #0288d1;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.styled-button:hover {
+  background-color: #01579b;
+}
+
+/* Decorative Circles and Shapes */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(100, 181, 246, 0.2);
+  animation: float 4s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.added-image {
+  position: absolute;
+  cursor: move;
+  width: 100px;
+  height: 100px;
+}
